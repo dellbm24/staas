@@ -1,0 +1,46 @@
+
+
+.iti.iti--allow-dropdown .iti__flag-container{
+    min-width: 100%;
+    z-index: 10;
+    /*background: #fff */;
+}
+.iti--separate-dial-code{
+    width: 100%!important;
+}
+.iti__country{
+     font-size: 14px;
+    line-height: 18px;
+}
+.iti__selected-dial-code{}
+
+
+.iti__country-list{
+    max-height: 375px;
+    max-width: 420px;
+}
+
+form .form-control.PhonePrefix{
+    padding-left: 0!important;
+    font-size: 0!important;
+}
+
+form .phone-prefix{
+    min-width: 86px;
+    max-width: 100%;
+}
+
+form .phone-prefix .warning-icon{
+    opacity: 0;
+}
+
+@media screen and (max-width: 767px){
+    .iti__country-list{
+        width: 320px;
+        max-width: 90vw;
+    }
+}
+
+button[type=submit]:disabled{
+    opacity: 0.6;
+}

@@ -1,0 +1,75 @@
+.registerForm .phone-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.registerForm .phone-prefix {
+    width: 26%;
+    margin-right: 3px;
+}
+
+.registerForm .phone-number {
+    width: 74%;
+    margin-left: 3px;
+}
+
+.registerForm .form-control {
+    height: 40px;
+}
+.registerForm .form-group {
+    margin-bottom: 6px;
+}
+
+.password-row {
+    display: flex;
+    flex-wrap: nowrap;
+    line-height: 1;
+}
+
+.password-row-item:first-of-type {
+    margin-right: 3px;
+    flex-basis: 66%;
+}
+
+.password-row-item:last-of-type {
+    margin-left: 3px;
+    flex-basis: 34%;
+}
+
+.password-row .generate-pass {
+    padding-left: 10px;
+    padding-right: 10px;
+    min-width: 130px;
+    height: 100%;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: none;
+    background: #e7e7e7;
+    color: #000000;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    width: 100%;
+}
+
+.password-row .generate-pass:after {
+    content: '' !important;
+}
+
+.terms-wrapper .has-error .error_box {
+    display: block;
+}
+
+html[dir="rtl"] .registerForm .password-row-item:first-of-type {
+    margin-right: 0;
+    margin-left: 3px;
+}
+
+html[dir="rtl"] .registerForm .password-row-item:last-of-type {
+    margin-right: 3px;
+    margin-left: 0;
+}
+
+html[dir="rtl"] .registerForm .phone-wrapper {
+    flex-direction: row-reverse;
+}

@@ -1,0 +1,38 @@
+.short-form-policy {
+    position: relative;
+    padding-top: 15px;
+}
+.short-form-policy > p:first-of-type {
+    display: inline;
+}
+.short-form-policy > p:last-of-type {
+    display: none;
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    background: white;
+    padding: 5px;
+    border-radius: 2px;
+    z-index: 10;
+}
+.members-form-policy-devider:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 991px) {
+    .members-form-policy-devider {
+        display: none;
+    }
+
+    .short-form-policy > p:first-of-type {
+        display: block;
+        margin: 15px 0;
+    }
+    .short-form-policy > p:last-of-type {
+        display: block !important;
+        opacity: 1 !important;
+        border: none;
+        position: static;
+        padding: 0;
+    }
+}

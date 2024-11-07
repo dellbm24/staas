@@ -1,0 +1,74 @@
+.cookie-widget {
+    position: fixed;
+    display: none;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    max-width: 590px;
+    padding: 15px 10px 11px;
+    color: #333;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 9999;
+    -webkit-box-shadow: 1px -1px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px -1px 15px rgba(0, 0, 0, 0.2); }
+.cookie-widget.cookie-not-accepted {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+.cookie-widget .cw-content {
+    line-height: 24px; }
+.cookie-widget .cw-content .cw-link {
+    text-transform: uppercase;
+    color: #fff;
+    white-space: nowrap; }
+.cookie-widget .cw-button-block .cw-accept-button {
+    display: inline-block;
+    background-color: transparent;
+    color: #000;
+    cursor: pointer;
+    padding: 5px;
+    margin-left: 10px;
+    border-radius: 3px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+.cookie-widget .cw-button-block .cw-accept-button:hover {
+    text-decoration: none;
+    background-color: #6db83e;
+    color: #fff;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+.cookie-widget .cw-close {
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    background-color: #444;
+    width: 25px;
+    height: 25px;
+    line-height: 24px;
+    font-size: 24px;
+    text-align: center; }
+
+@media (max-width: 767px) {
+    .cookie-widget {
+        padding: 5px 10px;
+        text-align: center;
+        background-color: #fff; }
+    .cookie-widget .cw-content {
+        line-height: 18px;
+        -ms-flex-preferred-size: 61%;
+        flex-basis: 61%;
+        font-size: 11px; }
+    .cookie-widget .cw-button-block {
+        margin: 10px 0; }
+    .cookie-widget .cw-button-block .cw-accept-button {
+        margin-left: 0; } }
